@@ -1,16 +1,21 @@
-SRC_DIR = ./source
-OBJ_DIR = ./build
+SRC_DIR = ./src
+OUT_DIR = ./build
+OBJ_DIR = $(OUT_DIR)/obj
+BIN_DIR = $(OUT_DIR)/bin
 
+#guarda en SRC_FILES el listado de todos los .c
 SRC_FILES = $(wildcard $(SRC_DIR)/*.c) 
-# SRC_FILES = ./source/main.c ./source/bar.c ./source/bar.c
+#guarda en OBJ_FILES todos los .o , reemplazando el nombre de los .c
 OBJ_FILES = $(patsubst $(SRC_DIR)/%.c, $(OBJ_DIR)/%.o, $(SRC_FILES))
-# OBJ_FILES = $(patsubst ./source/%.c, ./build/%.o, $(SRC_FILES))
-# OBJ_FILES = ./build/main.o ./build/bar.o ./build/bar.o
 
+#crea la carpeta .bin y gcc enlaza el binario final, con todos los .o
 all: $(OBJ_FILES)
-	@gcc $(OBJ_FILES) -o $(OBJ_DIR)/app.out
+	@echo Enlazando el binario final 
+	@mkdir -p $(BIN_DIR)
+	@gcc $(OBJ_FILES) -o $(BIN_DIR)/app.out
 
-$(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
-	@echo Compilando $< 
+#compila todo los .c de SRC_DIR y guarda en OBJ_DIR los .o
+$(OBJ_DIR)/%.o: $(SRC_DIR)/%.c 
+	@echo Compilando $< ...
 	@mkdir -p $(OBJ_DIR)
 	@gcc -o $@ -c $< 
