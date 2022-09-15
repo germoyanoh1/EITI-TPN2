@@ -6,24 +6,27 @@
  * All rights reserved.
  */
 
-/** @file main.c
+/** @file plantilla.c
  **
- ** @brief Programa principal del TPn2
+ ** @brief Plantilla de archivos fuente
  **
+ ** Plantilla para los archivos de codigo fuente de prácticos de las 
+ ** asignaturas Diseño Integrado de Sistemas Emebebidos y Sistemas Embebidos
+ ** de Tiempo Real dictadas en de la Especialización en Integración de
+ ** Sistemas Informaticos de la Univesidad Nacional de Tucumán
  ** 
  ** | RV | YYYY.MM.DD | Autor       | Descripción de los cambios              |
  ** |----|------------|-------------|-----------------------------------------|
  ** |  1 | 2022.09.12 | gmoyanoh1   | Version inicial del archivo             |
  ** 
- ** @defgroup TP2 Plantillas de Archivos
+ ** @defgroup plantilla Plantilals de Archivos
  ** @brief Plantillas de archivos normalizadas
  ** @{ 
  */
 
 /* === Inclusiones de cabeceras ============================================ */
-#include "main.h"
-#include <stdio.h>
-#include "alumno.h"
+#include "plantilla.h"
+
 /* === Definicion y Macros privados ======================================== */
 
 /* === Declaraciones de tipos de datos privados ============================ */
@@ -38,23 +41,7 @@
 
 /* === Definiciones de funciones publicas ================================== */
 
-int main(void) {
-	static const struct alumno_s alumno = {  
-		.apellido = "Moyano",
-		.nombre = "German",
-		.documento = "33.050.740"
-	};
-
-	nombre (&alumno);
-	
-	return 0;
-}
-
 /* === Ciere de documentacion ============================================== */
 
 /** @} Final de la definición del modulo para doxygen */
-
-
-
-
 
