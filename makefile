@@ -29,5 +29,5 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 
 #genera el html de doxygen para documentar
 doc:
-	@mkdir = $(OUT_DIR)
+	@mkdir -p $(OUT_DIR)
 	@doxygen
