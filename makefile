@@ -26,3 +26,8 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 	@echo Compilando $< ...
 	@mkdir -p $(OBJ_DIR)
 	@gcc -o $@ -c $< 
+
+#genera el html de doxygen para documentar
+doc:
+	@mkdir = $(OUT_DIR)
+	@doxygen

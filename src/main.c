@@ -10,8 +10,8 @@
  **
  ** @brief Programa principal del TPn2
  **
- ** @defgroup TP2 Plantillas de Archivos
- ** @brief Plantillas de archivos normalizadas
+ ** @defgroup TP2 Programa principal MAIN
+ ** @brief Archivo main.c del trabajo practico n2
  ** @{ 
  */
 

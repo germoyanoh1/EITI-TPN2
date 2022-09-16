@@ -17,8 +17,8 @@
  ** |----|------------|-------------|-----------------------------------------|
  ** |  1 | 2022.09.12 | gmoyanoh1   | Version inicial del archivo             |
  ** 
- ** @defgroup plantilla Plantilals de Archivos
- ** @brief Plantillas de archivos normalizadas
+ ** @defgroup Programa main.h
+ ** @brief Archivo main.h - trabajo practico n2
  ** @{ 
  */
 

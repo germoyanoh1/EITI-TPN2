@@ -8,10 +8,10 @@
 
 /** @file alumno.c
  **
- ** @brief TP2 - Plantilla de archivos fuente
+ ** @brief TP2 - Definiciones del archivo alumno
  ** 
- ** @defgroup plantilla de Archivos
- ** @brief Plantillas de archivos normalizadas
+ ** @defgroup Archivo alumno.c del TP2
+ ** @brief Archivo .c que pido del trabajo practico n2
  ** @{ 
  */
 

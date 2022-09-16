@@ -11,10 +11,10 @@
 
 /** @file alumno.h
  **
- ** @brief Plantilla de archivos de cabecera 
+ ** @brief TP2 - Declaraciones del archivo alumno 
  **
- ** @defgroup plantilla Plantilals de Archivos
- ** @brief Plantillas de archivos normalizadas
+ ** @defgroup Archivo alumno.h del TP2
+ ** @brief Archivo .h que pide el trabajo practico n2
  ** @{ 
  */
 
