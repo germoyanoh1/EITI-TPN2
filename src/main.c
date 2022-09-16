@@ -10,11 +10,6 @@
  **
  ** @brief Programa principal del TPn2
  **
- ** 
- ** | RV | YYYY.MM.DD | Autor       | Descripción de los cambios              |
- ** |----|------------|-------------|-----------------------------------------|
- ** |  1 | 2022.09.12 | gmoyanoh1   | Version inicial del archivo             |
- ** 
  ** @defgroup TP2 Plantillas de Archivos
  ** @brief Plantillas de archivos normalizadas
  ** @{ 
@@ -38,11 +33,12 @@
 
 /* === Definiciones de funciones publicas ================================== */
 
+//! Definicion de los datos "estaticos" de un alumno
 int main(void) {
 	static const struct alumno_s alumno = {  
-		.apellido = "Moyano",
-		.nombre = "German",
-		.documento = "33.050.740"
+		.apellido = "Moyano", //!< Definicion del apellido
+		.nombre = "German", //!< Definicion del nombre
+		.documento = "33.050.740" //!< Definicion del DNI
 	};
 
 	nombre (&alumno);

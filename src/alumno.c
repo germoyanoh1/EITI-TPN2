@@ -10,7 +10,7 @@
  **
  ** @brief TP2 - Plantilla de archivos fuente
  ** 
- ** @defgroup plantilla Plantilals de Archivos
+ ** @defgroup plantilla de Archivos
  ** @brief Plantillas de archivos normalizadas
  ** @{ 
  */
@@ -32,6 +32,7 @@
 
 /* === Definiciones de funciones publicas ================================== */
 
+//! Definicion de la funcion "nombre" y lo que debe hacer
 void nombre (const struct alumno_s * alumno) {
     printf("El apellido del alumno es: %s\r\n", alumno->apellido);
     printf("El nombre del alumno es: %s\r\n", alumno->nombre);

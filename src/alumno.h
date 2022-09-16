@@ -9,19 +9,10 @@
 #ifndef ALUMNO_H   /*! @cond    */
 #define ALUMNO_H   /*! @endcond */
 
-/** @file plantilla.h
+/** @file alumno.h
  **
  ** @brief Plantilla de archivos de cabecera 
  **
- ** Plantilla para los archivos de cabeceras de las prácticos de la 
- ** asignaturas Sistemas Embebidos
- ** de Tiempo Real dictadas en de la Especialización en Integración de
- ** Sistemas Informaticos de la Univesidad Nacional de Tucumán
- ** 
- ** | RV | YYYY.MM.DD | Autor       | Descripción de los cambios              |
- ** |----|------------|-------------|-----------------------------------------|
- ** |  1 | 2022.09.12 | gmoyanoh1   | Version inicial del archivo             |
- ** 
  ** @defgroup plantilla Plantilals de Archivos
  ** @brief Plantillas de archivos normalizadas
  ** @{ 
@@ -38,10 +29,11 @@ extern "C" {
 
 /* == Declaraciones de tipos de datos publicos ============================= */
 
+//! Estructura que contiene los datos del alumno.
 struct alumno_s {
-    char apellido [60];
-    char nombre [60];
-    char documento [16];
+    char apellido [60]; //*< Cadena de caracteres del apellido del alumno
+    char nombre [60]; //*< Cadena de caracteres del nombre del alumno
+    char documento [16]; //*< Cadena de caracteres del documento del alumno
 };
 
 /* === Declaraciones de variables publicas ================================= */
